@@ -1,0 +1,126 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #d1d8e0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 600px;
+  height: 450px;
+  background-color: #778ca3;
+  display: flex;
+  border-radius: 4px;
+  padding: 10px;
+}
+.left{
+ flex-basis: 50%;
+  background-color: #273c75;
+  border-radius: 4px;
+  padding: 10px;
+  color: rgb(209, 209, 209);
+}
+.left h3{
+
+margin-bottom: 10px;
+font-weight: 700;
+text-transform: uppercase;
+}
+p{
+  font-size: 14px;
+  font-weight: 500;
+}
+#Balance{
+  font-size: 24px;
+}
+.inc,.exp{
+  display: inline-block;
+ 
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+}
+.inc{
+  border: 2px solid rgb(123, 255, 123);
+}
+.exp{
+  border: solid 2px red; 
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+#form input{
+  padding: 5px 10px;
+  outline: none;
+}
+#form button{
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+ padding: 5px;
+}
+.right{
+ flex-basis: 50%;
+  padding: 10px;
+  color: rgb(240, 240, 240);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  width: 4px;
+
+}
+::-webkit-scrollbar-track{
+  background-color:  #778ca3;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 10px;
+}
+.right .transaction{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+.green,.red{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.green{
+  border-left: 3px solid rgb(66, 233, 74);
+  position: relative;
+}
+.red{
+  border-left: 3px solid red;
+  position: relative;
+}
+.transaction .close{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -10px;
+  top: -5px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  line-height: 15px;
+}

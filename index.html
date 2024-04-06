@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+   <div class="container">
+    <div class="left">
+      <h3>income expense tracker</h3>
+      <p >Your Balance</p>
+        <h3 id="Balance"> 0.00</h3>
+        <div class="inc">
+          <p>income</p>
+          <p id="income">0.00</p>
+        </div>
+        <div class="exp">
+          <p >expense</p>
+          <p id="expense">0.00</p>
+        </div>
+        <form action="#" id="form">
+          <label for="description">Description</label>
+          <input type="text" id="description" placeholder="eg. salary">
+         
+          <label for="amount">Amount</label>
+          <input type="text" id="Amount" placeholder="eg. 100/-100">
+          <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+    <div class="right">
+      <h3>your transaction</h3>
+      <div class="transaction">
+       <div class="green">
+        <p class="inc-des">salary</p>
+        <p class="inc-amt">10000</p>
+        <button class="close">x</button>
+       </div>
+       <div class="red">
+        <p class="exp-des">petrol</p>
+        <p class="exp-amt">-100</p>
+        <button class="close">x</button>
+       </div>
+   
+      </div>
+    </div>
+   </div>
+</body>
+</html>
